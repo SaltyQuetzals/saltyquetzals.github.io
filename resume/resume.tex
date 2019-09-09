@@ -1,0 +1,163 @@
+\documentclass[margin,line,11pt,letterpaper]{res}
+
+    \usepackage[colorlinks=false]{hyperref}
+    \hypersetup{
+        colorlinks=false,
+        linkcolor=blue,
+        filecolor=magenta,      
+        urlcolor=cyan,
+    }
+
+    % Side section header styling
+    \let\oldsection\section
+    \renewcommand{\section}[1]{\vspace{-2mm}\oldsection{\small\sc {#1}}}
+    
+\begin{document}
+\newsectionwidth{1in}
+
+\name{\makebox[\resumewidth]{{\LARGE Gabriel Britain} \hfill}}
+
+\address{}
+
+\begin{resume}
+    \vspace{-7mm}
+    \section{Contact Information}
+    Mail: \href{mailto:quontas@gmail.com}{quontas@gmail.com}\\
+    Website: \url{https://gabrielbrita.in}\\
+    GitHub: \url{https://github.com/SaltyQuetzals}
+
+    \section{Education}
+
+    \begin{format}
+        \employer{l}\location{r}\\
+        \title{l}\dates{r}\\
+        \body\\
+    \end{format}
+
+    \employer{\textbf{Texas A\&M University}}
+    \title{\textit{BS in Computer Science, 3.72/4.0 GPA}}
+    \dates{\textit{August 2016 - Expected May 2020}}
+    \location{College Station, TX}
+    \begin{position}
+        \vspace{-3mm}\\
+        Coursework: Human-Computer Interaction, NLP, Analysis of Algorithms, Data Structures
+    \end{position}
+
+    \section{Work Experience}
+
+    \employer{\textbf{Google}}
+    \title{\textit{Software Engineer Intern}}
+    \dates{\textit{May 2019 - August 2019}}
+    \location{Sunnyvale, CA}
+    \begin{position}
+        \vspace{-3mm}
+        \begin{list2}
+            \item Created customer-facing, real-time notification system for Google Voice enterprise customers.
+            \item Integrated system into multiple teams' codebases to provide instantaneous data consistency.
+        \end{list2}
+    \end{position}
+
+    \employer{\textbf{Interface Ecology Lab}}
+    \title{\textit{Undergraduate Researcher}}
+    \dates{\textit{February 2019 - Present}}
+    \location{College Station, TX}
+    \begin{position}
+        \vspace{-3mm}
+        \begin{list2}
+            \item{Developing real-time collaborative web app that implements writing, sketching, chat, and live streaming video.}
+            \item{Built developer-friendly clusters for running multi-container architecture locally, simplifying development process.}
+        \end{list2}
+    \end{position}
+
+    \employer{\textbf{Google}}
+    \title{\textit{Site Reliability Engineer Intern}}
+    \dates{\textit{May 2018 - August 2018}}
+    \location{Sunnyvale, CA}
+    \begin{position}
+        \vspace{-3mm}
+        \begin{list2}
+            \item Created automated document classification pipeline, speeding up document reviewal process by 50\%.
+            \item Integrated new pipeline into application designed to manage company-wide resilience tests.
+            \item Overhauled existing interface based on stakeholder feedback and included new pipeline output.
+        \end{list2}
+    \end{position}
+
+    \employer{\textbf{State Farm Insurance}}
+    \title{\textit{Software Engineer Intern}}
+    \dates{\textit{May 2017 - August 2017}}
+    \location{Richardson, TX}
+    \begin{position}
+        \vspace{-3mm}
+        \begin{list2}
+            \item Created full-stack web application to index automated test suite for engineers to search through.
+            \item Application performed cosine similarity queries on user queries to provide ranked results.
+            \item Released completed application to 100+ developers and improved test creation time by 40\%.
+        \end{list2}
+    \end{position}
+
+
+    \section{Projects}
+
+    \begin{format}
+        \title{l}\dates{r}\\
+        \body\\
+    \end{format}
+
+    \title{\href{https://github.com/tamuhack-org}{\textbf{TAMUhack Software Suite}}}
+    \dates{\textit{January 2019 - Present}}
+    \begin{position}
+        \vspace{-3mm}
+        \begin{list2}
+            \item Created full-stack registration system in Django with 800+ users.
+            \item Constructed GitOps CI/CD pipeline, reducing deployment time by over 90\%.
+            \item Deployed Kubernetes cluster to Google Cloud Platform for high resiliency and uptime.
+        \end{list2}
+    \end{position}
+
+    \title{\href{https://github.com/good-bull-schedules/Good-Bull-Schedules}{\textbf{Good Bull Schedules}}}
+    \dates{\textit{January 2017 - May 2018}}
+    \begin{position}
+        \vspace{-3mm}
+        \begin{list2}
+            \item Created first public, open-data API for processing Texas A\&M course data.
+            \item Designed responsive scheduling application for students to plan their upcoming schedule.
+            \item Implemented a constraint satisfaction solver to generate optimal schedules for students.
+        \end{list2}
+    \end{position}
+
+    \section{Activities}
+
+    \begin{format}
+        \title{l}\dates{r}\\
+        \body
+    \end{format}
+
+    \title{\textbf{TAMUhack Tech Organizer}}\dates{\textit{January 2019 - Present}}
+    \begin{position}\vspace{-7mm}\end{position}
+    \title{\textbf{Aggie Coding Club Vice President}}\dates{\textit{January 2018 - Present}}
+    \begin{position}\vspace{-7mm}\end{position}
+
+    \section{Awards}
+
+    \begin{format}
+        \title{l}\dates{r}\\
+        \body
+    \end{format}
+
+    \title{\textbf{National Hispanic Recognition Program Scholar}}
+    \dates{\textit{May 2015}}
+    \begin{position}
+        \vspace{-0.001mm}
+        \begin{list2}
+            \item Received award presented to the top 5,000 Hispanic students out of 250,000 who take the PSAT for outstanding academic achievements.
+        \end{list2}
+    \end{position}
+
+    \section{Skills}
+    \renewcommand{\linespread}{5}
+    \textbf{Languages}:
+    Python, TypeScript/JavaScript, HTML/CSS, Java, C++, Rust, Go, C\\
+    \textbf{Tools}:
+    Git, Linux, BASH, WebSockets, Node.js, Docker, Kubernetes, Protobuffers, TravisCI
+\end{resume}
+\end{document}
