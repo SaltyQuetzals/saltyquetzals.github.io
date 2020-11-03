@@ -1,0 +1,81 @@
+html {
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
+  margin-right: 64px;
+  margin-bottom: 128px;
+  margin-top: 32px;
+}
+
+#logo {
+  flex: 7;
+  font-size: 3em;
+  font-weight: bold;
+  color: #2F80ED;
+}
+
+nav .links {
+  font-size: 1.5em;
+  flex: 3;
+  justify-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+nav .link {
+  flex: 1;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#tag-container {
+  display: block;
+  margin: auto;
+  max-width: 80vw;
+}
+
+.tag-row {
+  display: flex;
+  justify-content: space-between;
+  min-height: 6em;
+  vertical-align: text-top;
+}
+
+div.tag {
+  display: flex;
+  flex-direction: column;
+}
+
+.quip {
+  font-size: 0.5em;
+  text-align: center;
+}
+
+.tag {
+  /* flex: 1; */
+  font-size: 3em;
+  text-align: center;
+}
+
+.emphasized {
+  color: #2F80ED;
+}
+
+.tag-row > span:first-child {
+  text-align: left;
+}
+
+.tag-row > span:last-child {
+  text-align: right;
+  right: 0;
+  left: auto;
+}
