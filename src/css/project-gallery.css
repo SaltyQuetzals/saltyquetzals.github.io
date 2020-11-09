@@ -52,12 +52,12 @@
 }
 
 .project .project-preview#remote-exercise {
-  background-image: url('../public/Remote Exercise.png');
+  background-image: url('../public/remote_exercise.png');
   background-size: cover;
 }
 
 .project .project-preview#ouroboros {
-  background-image: url('../public/Ouroboros.png');
+  background-image: url('../public/ouroboros.png');
   background-size: cover;
 }
 
