@@ -1,0 +1,11 @@
+@import './common.css';
+
+h2 {
+  font-size: 2em;
+  color: #2f80ed;
+}
+
+.projects {
+    margin: auto;
+    max-width: 75vw;
+}
