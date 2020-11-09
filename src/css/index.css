@@ -53,15 +53,6 @@ div.tag {
   margin-bottom: 20vh;
 }
 
-h1 {
-  font-size: 3em;
-}
-
-h2 {
-  font-size: 2em;
-  color: #2f80ed;
-}
-
 .intro p {
   font-size: 1.5em;
 }
@@ -101,13 +92,5 @@ h2 {
   .tag {
     margin: 0.125em;
     font-size: 2em;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.5em;
   }
 }

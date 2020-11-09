@@ -41,3 +41,22 @@ nav a {
   text-decoration: none;
   color: black;
 }
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #2f80ed;
+}
+
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}
