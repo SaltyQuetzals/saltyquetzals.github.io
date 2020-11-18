@@ -25,7 +25,7 @@ jobs:
       run: npm run build
 
     - name: Copy CNAME
-      run: cp CNAME build/
+      run: cp CNAME dist/
 
     - name: Deploy
       run: |
