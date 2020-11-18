@@ -1,0 +1,61 @@
+@import './common.css';
+@import './nav.css';
+
+.hero {
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+
+nav {
+    margin-bottom: 6vh;
+}
+
+.title-and-descriptor {
+  margin-bottom: 5vh;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 0.75vh;
+}
+
+.project-descriptor {
+    font-size: 1.5em;
+}
+
+.featured-img-and-contributions {
+  display: flex;
+}
+.featured-image {
+  /* align-self: flex-start; */
+  flex: 8;
+  margin-right: 5vw;
+}
+
+.featured-image#grove {
+  background-image: url('../public/grove.png');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.contributions {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.contribution-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+.contribution-list {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+  font-size: 24px;
+}

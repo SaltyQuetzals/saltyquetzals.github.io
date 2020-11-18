@@ -1,0 +1,37 @@
+nav {
+  display: flex;
+  align-items: center;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  margin-bottom: 15vh;
+  margin-top: 3vh;
+}
+
+#logo {
+  flex: 7;
+  font-size: 3em;
+  font-weight: bold;
+  color: #2f80ed;
+}
+
+nav .links {
+  font-size: 1.5em;
+  flex: 3;
+  justify-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+nav .link {
+  flex: 1;
+}
+
+nav .active {
+  font-weight: bolder;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
