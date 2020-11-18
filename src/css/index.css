@@ -4,7 +4,7 @@
 #tag-container {
   display: block;
   margin: auto;
-  width: 80vw;
+  width: 83vw;
   margin-bottom: 20vh;
 }
 
@@ -90,4 +90,8 @@ div.tag {
     margin: 0.125em;
     font-size: 2em;
   }
+}
+
+h2 {
+  color: #2f80ed;
 }
