@@ -84,3 +84,8 @@
   background-image: url('../public/ssbmml.jpg');
   background-size: cover;
 }
+
+.project .project-preview#muc-cog {
+  background-image: url('../public/muc.png');
+  background-size: cover;
+}
