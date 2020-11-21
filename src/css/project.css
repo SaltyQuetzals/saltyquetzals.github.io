@@ -70,7 +70,7 @@ h1 {
 }
 
 section {
-  max-width: 66vw;
+  max-width: 33vw;
   margin: auto;
   margin-top: 5vh;
 }
@@ -83,4 +83,64 @@ section h2 {
 section p {
   font-size: 18px;
   margin: 0;
+}
+
+.screen-descriptors {
+  margin: auto;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 50%;
+}
+
+.screen-descriptor {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+}
+.screen-description {
+  margin-left: 64px;
+  margin-right: 64px;
+  flex: 1;
+}
+
+.screen-description > span {
+  font-size: 24px;
+  font-weight: bold;
+}
+.screen-description > ul {
+  font-size: 18px;
+}
+
+.screen-description > ul > li {
+  margin-bottom: 8px;
+}
+.render {
+  flex: 1;
+}
+
+.inset {
+  max-width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.iframe-container {
+  overflow: hidden;
+  /* 16:9 aspect ratio */
+  padding-top: 56.25%;
+  margin-top: 32px;
+  position: relative;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
