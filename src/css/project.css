@@ -22,8 +22,8 @@ h1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 30vw;
 }
+
 .featured-image {
   flex: 1;
   object-fit: contain;
@@ -41,18 +41,18 @@ h1 {
 }
 
 .contribution-title {
-  font-size: 28px;
+  font-size: 1.5em;
   font-weight: bold;
 }
 .contribution-list {
   list-style: none;
   margin-top: 0;
   padding-left: 0;
-  font-size: 24px;
+  font-size: 1.25em;
 }
 
 section {
-  max-width: 33vw;
+  max-width: 75%;
   margin: auto;
   margin-top: 5vh;
 }
@@ -63,45 +63,53 @@ section h2 {
 }
 
 section p {
-  font-size: 18px;
+  font-size: 1.25em;
   margin: 0;
 }
 
 .screen-descriptors {
   margin: auto;
   margin-top: 32px;
+  max-width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 50%;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .screen-descriptor {
   display: flex;
   flex: 1;
-  flex-direction: row;
+  flex-direction: column;
+  margin-left: 16px;
+  margin-right: 16px;
   align-items: center;
 }
 .screen-description {
-  margin-left: 64px;
-  margin-right: 64px;
   flex: 1;
+  margin-top: 32px;
 }
 
 .screen-description > span {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .screen-description > ul {
   font-size: 18px;
+  padding-left: 0;
 }
 
 .screen-description > ul > li {
-  margin-bottom: 8px;
+  margin-top: 16px;
+  list-style: none;
 }
-.render {
+
+.screenshot {
   flex: 1;
+}
+
+.render {
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .inset {
@@ -125,4 +133,61 @@ section p {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+@media only screen and (max-width: 640px) {
+  .featured-img-and-contributions {
+    flex-direction: column;
+  }
+
+  .featured-image {
+    flex: 1;
+    margin-right: 0;
+  }
+
+  .featured-image > img {
+    max-width: 100%;
+  }
+
+  .contributions {
+    flex-direction: row;
+  }
+
+  .contribution-title {
+    font-size: 1.125em;
+  }
+
+  .contribution-list {
+    font-size: 1em;
+    padding-top: 16px;
+    margin-bottom: 0px;
+  }
+
+  .screen-descriptors {
+    flex-direction: column;
+  }
+
+  section {
+    max-width: 100%;
+  }
+
+  .screenshot > img {
+    max-height: 30vh;
+  }
+
+  .screen-description > span {
+    font-size: 1.125em;
+    font-weight: 700;
+  }
+  .screen-description > ul {
+    font-size: 1em;
+    padding-left: 0;
+    margin-bottom: 16px;
+  }
+  
+  .screen-description > ul > li {
+    margin-top: 8px;
+    list-style: none;
+  }
+  
 }
