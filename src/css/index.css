@@ -4,7 +4,6 @@
 #tag-container {
   display: block;
   margin: auto;
-  width: 83vw;
   margin-bottom: 20vh;
 }
 
@@ -46,7 +45,7 @@ div.tag {
   display: block;
   margin: auto;
   text-align: center;
-  max-width: 50vw;
+  max-width: 50%;
   margin-bottom: 20vh;
 }
 
@@ -56,12 +55,11 @@ div.tag {
 
 .cool-work {
   margin: auto;
-  max-width: 80vw;
 }
 
 @media only screen and (max-width: 640px) {
   .intro {
-    max-width: 75vw;
+    max-width: 100%;
   }
 
   nav {
