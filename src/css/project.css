@@ -103,6 +103,10 @@ section > img {
   max-width: 100%;
 }
 
+.bold-text {
+  font-weight: bolder;
+}
+
 .iframe-container {
   overflow: hidden;
   /* 16:9 aspect ratio */
@@ -121,6 +125,9 @@ section > img {
 }
 
 @media only screen and (min-width: 640px) {
+  .project-descriptor {
+    font-size: 2rem;
+  }
   .contributions {
     display: flex;
     flex-direction: row;
@@ -134,9 +141,13 @@ section > img {
   }
 
   .screen-descriptors {
-    max-width: 95%;
+    width: 100%;
+    min-width: 100%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+    margin-right: 0;
     align-items: flex-start;
   }
 
@@ -145,13 +156,13 @@ section > img {
   }
 
   .screen-description li {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   section > p {
-    font-size: 1.25rem
+    font-size: 1.25rem;
   }
-  
+
   section li {
     font-size: 1.25rem;
   }
