@@ -2,120 +2,105 @@
 @import './nav.css';
 
 nav {
-  margin-bottom: 6vh;
-}
-
-.title-and-descriptor {
-  margin-bottom: 5vh;
+  margin-bottom: 32px;
 }
 
 h1 {
-  margin: 0;
-  margin-bottom: 0.75vh;
+  font-weight: bolder;
+  margin-bottom: 8px;
 }
 
 .project-descriptor {
-  font-size: 1.5em;
+  font-size: 1.125rem;
 }
 
 .featured-img-and-contributions {
-  width: 100%;
+  margin-top: 2rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .featured-image {
   flex: 1;
-  object-fit: contain;
-  margin-right: 5vw;
+}
+
+.featured-image > img {
+  max-width: 100%;
 }
 
 .contributions {
-  flex: 8;
+  flex: 1;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: stretch;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+}
+
+.contribution {
+  margin-top: 2rem;
 }
 
 .contribution-title {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(138, 138, 138);
+  font-weight: bolder;
 }
+
 .contribution-list {
+  margin: 0;
   list-style: none;
-  margin-top: 0;
-  padding-left: 0;
-  font-size: 1.25em;
+  padding: 0;
+  font-size: 1.25rem;
 }
 
-section {
-  max-width: 75%;
-  margin: auto;
-  margin-top: 5vh;
-}
-
-section h2 {
-  margin: 0;
-  margin-bottom: 0.75vh;
-}
-
-section p {
-  font-size: 1.25em;
-  margin: 0;
+.contribution-list li {
+  padding-top: 8px;
 }
 
 .screen-descriptors {
-  margin: auto;
-  margin-top: 32px;
-  max-width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  max-width: 75%;
+  margin: auto;
 }
 
 .screen-descriptor {
+  flex: 1;
   display: flex;
-  flex: 1;
   flex-direction: column;
-  margin-left: 16px;
-  margin-right: 16px;
+  justify-content: center;
   align-items: center;
-}
-.screen-description {
-  flex: 1;
-  margin-top: 32px;
-}
-
-.screen-description > span {
-  font-size: 24px;
-  font-weight: 700;
-}
-.screen-description > ul {
-  font-size: 18px;
-  padding-left: 0;
-}
-
-.screen-description > ul > li {
-  margin-top: 16px;
-  list-style: none;
+  margin-bottom: 2rem;
 }
 
 .screenshot {
   flex: 1;
 }
 
-.render {
+.screenshot > img {
   max-width: 100%;
-  object-fit: contain;
+}
+.screen-description {
+  margin-top: 1rem;
 }
 
-.inset {
+.screen-description > span {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.screen-description > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.screen-description li {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+section > img {
   max-width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .iframe-container {
@@ -135,59 +120,43 @@ section p {
   width: 100%;
 }
 
-@media only screen and (max-width: 640px) {
-  .featured-img-and-contributions {
-    flex-direction: column;
-  }
-
-  .featured-image {
-    flex: 1;
-    margin-right: 0;
+@media only screen and (min-width: 640px) {
+  .contributions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .featured-image > img {
-    max-width: 100%;
-  }
-
-  .contributions {
-    flex-direction: row;
-  }
-
-  .contribution-title {
-    font-size: 1.125em;
-  }
-
-  .contribution-list {
-    font-size: 1em;
-    padding-top: 16px;
-    margin-bottom: 0px;
+    display: block;
+    object-fit: contain;
+    margin: auto;
   }
 
   .screen-descriptors {
-    flex-direction: column;
-  }
-
-  section {
-    max-width: 100%;
-  }
-
-  .screenshot > img {
-    max-height: 30vh;
+    max-width: 95%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
   }
 
   .screen-description > span {
-    font-size: 1.125em;
-    font-weight: 700;
+    font-size: 2rem;
   }
-  .screen-description > ul {
-    font-size: 1em;
-    padding-left: 0;
-    margin-bottom: 16px;
+
+  .screen-description li {
+    font-size: 1rem;
   }
-  
-  .screen-description > ul > li {
-    margin-top: 8px;
-    list-style: none;
+
+  section > p {
+    font-size: 1.25rem
   }
   
+  section li {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
 }
