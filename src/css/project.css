@@ -124,6 +124,18 @@ section > img {
   width: 100%;
 }
 
+.video-container {
+  overflow: hidden;
+  width: 100%;
+  min-width: 100%;
+  margin-top: 32px;
+  position: relative;
+}
+
+video {
+  max-width: 100%;
+}
+
 @media only screen and (min-width: 640px) {
   .project-descriptor {
     font-size: 2rem;
