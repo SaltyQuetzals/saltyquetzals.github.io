@@ -21,8 +21,10 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Build
-      run: npm run build
+    # - name: Build
+    #   run: npm run build
+    - name: Make dist folder
+      run: mkdir dist
 
     - name: Copy CNAME
       run: cp CNAME dist/
@@ -32,7 +34,7 @@ jobs:
         git config --global user.name $user_name
         git config --global user.email $user_email
         git remote set-url origin https://${github_token}@github.com/${repository}
-        npm run deploy
+        cp -r src/* dist
       env:
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
