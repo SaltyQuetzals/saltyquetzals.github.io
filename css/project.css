@@ -100,12 +100,20 @@ h1 {
   font-size: 14px;
 }
 
-section > img {
+.bold-text {
+  font-weight: bolder;
+}
+
+figure > img {
+  min-width: 100%;
+  margin: auto;
   max-width: 100%;
 }
 
-.bold-text {
-  font-weight: bolder;
+figcaption {
+  margin: auto;
+  text-align: center;
+  font-style: italic;
 }
 
 .iframe-container {

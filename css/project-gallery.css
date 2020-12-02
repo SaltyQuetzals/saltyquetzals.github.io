@@ -57,11 +57,6 @@
   }
 }
 
-.project .project-preview#fittogether {
-  background-image: url('../public/fittogether.png');
-  background-size: cover;
-}
-
 .project .project-preview#grove {
   background-image: url('../public/grove.png');
   background-color: transparent;
@@ -86,6 +81,6 @@
 }
 
 .project .project-preview#muc-cog {
-  background-image: url('../public/muc.png');
+  background-image: url('../public/muc.jpg');
   background-size: cover;
 }
