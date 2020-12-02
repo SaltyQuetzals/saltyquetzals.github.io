@@ -1,0 +1,185 @@
+@import './common.css';
+@import './nav.css';
+
+nav {
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-weight: bolder;
+  margin-bottom: 8px;
+}
+
+.project-descriptor {
+  font-size: 1.125rem;
+}
+
+.featured-img-and-contributions {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-image {
+  flex: 1;
+}
+
+.featured-image > img {
+  max-width: 100%;
+}
+
+.contributions {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contribution {
+  margin-top: 2rem;
+}
+
+.contribution-title {
+  font-size: 1.5rem;
+  color: rgb(138, 138, 138);
+  font-weight: bolder;
+}
+
+.contribution-list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  font-size: 1.25rem;
+}
+
+.contribution-list li {
+  padding-top: 8px;
+}
+
+.screen-descriptors {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  margin: auto;
+}
+
+.screen-descriptor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.screenshot {
+  flex: 1;
+}
+
+.screenshot > img {
+  max-width: 100%;
+}
+.screen-description {
+  margin-top: 1rem;
+}
+
+.screen-description > span {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.screen-description > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.screen-description li {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+section > img {
+  max-width: 100%;
+}
+
+.bold-text {
+  font-weight: bolder;
+}
+
+.iframe-container {
+  overflow: hidden;
+  /* 16:9 aspect ratio */
+  padding-top: 56.25%;
+  margin-top: 32px;
+  position: relative;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.video-container {
+  overflow: hidden;
+  width: 100%;
+  min-width: 100%;
+  margin-top: 32px;
+  position: relative;
+}
+
+video {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 640px) {
+  .project-descriptor {
+    font-size: 2rem;
+  }
+  .contributions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .featured-image > img {
+    display: block;
+    object-fit: contain;
+    margin: auto;
+  }
+
+  .screen-descriptors {
+    width: 100%;
+    min-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+    margin-right: 0;
+    align-items: flex-start;
+  }
+
+  .screen-description > span {
+    font-size: 2rem;
+  }
+
+  .screen-description li {
+    font-size: 1.25rem;
+  }
+
+  section > p {
+    font-size: 1.25rem;
+  }
+
+  section li {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}

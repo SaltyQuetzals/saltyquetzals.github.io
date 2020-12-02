@@ -1,0 +1,14 @@
+@import './common.css';
+@import './nav.css';
+
+.about {
+  max-width: 50%;
+  margin: 3%;
+}
+
+@media only screen and (max-width: 640px) {
+  .about {
+    margin: auto;
+    max-width: 75%;
+  }
+}
