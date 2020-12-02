@@ -24,7 +24,7 @@ jobs:
     # - name: Build
     #   run: npm run build
     - name: Make dist folder
-      run: mkdir dist
+      run: rm -rf dist && mkdir dist
 
     - name: Copy CNAME
       run: cp CNAME dist/
