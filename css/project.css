@@ -104,9 +104,18 @@ h1 {
   font-weight: bolder;
 }
 
+figure {
+  text-align: center;
+}
+
 figure > img {
   min-width: 100%;
   margin: auto;
+  max-width: 100%;
+}
+
+figure > img.portrait {
+  min-width: 100%;
   max-width: 100%;
 }
 
@@ -190,5 +199,10 @@ video {
 
   h3 {
     font-size: 1.5rem;
+  }
+
+  figure > img.portrait {
+    min-width: 33%;
+    max-width: 33%;
   }
 }
