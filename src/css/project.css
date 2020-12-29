@@ -154,6 +154,22 @@ video {
   max-width: 100%;
 }
 
+.figure-img-row {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.figure-img > img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.figure-img {
+  padding-bottom: 2rem;
+}
+
 @media only screen and (min-width: 640px) {
   .project-descriptor {
     font-size: 2rem;
@@ -204,5 +220,10 @@ video {
   figure > img.portrait {
     min-width: 33%;
     max-width: 33%;
+  }
+
+  .figure-img-row {
+    flex-direction: row;
+    padding-right: 2rem;
   }
 }
