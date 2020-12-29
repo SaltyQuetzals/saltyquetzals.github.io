@@ -84,3 +84,8 @@
   background-image: url('../public/muc.jpg');
   background-size: cover;
 }
+
+.project .project-preview#livemache {
+  background-image: url('../public/livemache.png');
+  background-size: cover;
+}
