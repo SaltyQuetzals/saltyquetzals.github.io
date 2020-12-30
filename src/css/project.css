@@ -211,3 +211,21 @@ video {
     padding-right: 2rem;
   }
 }
+
+.screen-descriptors-grid {
+  display: grid;
+  margin: auto;
+  max-width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1vw;
+  column-gap: 2vh;
+}
+
+.screen-descriptors-grid span {
+  font-size: 1.25rem;
+}
+
+.thumbnail-grid > .screen-descriptor {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
