@@ -2,12 +2,16 @@
 @import './nav.css';
 
 nav {
-  margin-bottom: 32px;
+  margin-bottom: 10vh;
 }
 
 h1 {
   font-weight: bolder;
   margin-bottom: 8px;
+}
+
+h2 {
+  letter-spacing: 0.25rem;
 }
 
 .project-descriptor {
@@ -207,6 +211,7 @@ video {
 
   section > p {
     font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   section li {

@@ -13,260 +13,273 @@
   </head>
   <body>
     <nav>
-      <a id="logo" href="../index.html">gb</a>
+      <a id="logo" href="./index.html">gb</a>
       <div class="links">
         <a class="active link" href="../projects.html">projects</a>
         <a class="link" href="../about.html">about</a>
-        <a class="link" href="../public/Gabriel_Britain_Resume.pdf">resume</a>
+        <a
+          class="link"
+          href="./public/Gabriel_Britain_Resume.pdf"
+          target="_blank"
+          >resume</a
+        >
       </div>
     </nav>
-    <div class="title-and-descriptor">
-      <h1 class="emphasized">Ouroboros</h1>
-      <span class="project-descriptor"
-        >Hackathon registration built by organizers, for organizers.</span
-      >
-    </div>
-    <div class="featured-img-and-contributions">
-      <div class="featured-image">
-        <img src="../public/ouroboros.png" />
+    <main>
+      <div class="title-and-descriptor">
+        <h1 class="emphasized">Ouroboros</h1>
+        <span class="project-descriptor"
+          >Hackathon registration built by organizers, for organizers.</span
+        >
       </div>
-      <div class="contributions">
-        <div class="contribution">
-          <span class="contribution-title">WHAT I DID</span>
-          <ul class="contribution-list">
-            <li>Software Architecture Design</li>
-            <li>Software Implementation</li>
-            <li>API Development</li>
-            <li>Deployment Automation</li>
-            <li>Documentation &amp; Handoff</li>
-          </ul>
+      <div class="featured-img-and-contributions">
+        <div class="featured-image">
+          <img src="../public/ouroboros.png" />
         </div>
-        <div class="contribution">
-          <span class="contribution-title">TOOLS I USED</span>
-          <ul class="contribution-list">
-            <li>Python</li>
-            <li>Docker</li>
-            <li>PostgreSQL</li>
-            <li>Google Cloud Platform</li>
-            <li>HTML/CSS/JS</li>
-          </ul>
-        </div>
-        <div class="contribution">
-          <span class="contribution-title">MY TEAMMATES</span>
-          <ul class="contribution-list">
-            <li>Grace Fan</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <section>
-      <h2>BACKGROUND</h2>
-      <p>
-        <a href="https://tamuhack.com">TAMUhack</a> is a student organization
-        that hosts Texas' largest intercollegiate hackathon at Texas A&amp;M
-        University every year. For 24 hours, 500+ students from across the
-        country gather at Texas A&amp;M to build prototype applications, and get
-        free food, company merchandise, and potentially win big prizes.
-      </p>
-    </section>
-    <section>
-      <h2>PROBLEM</h2>
-      <p>
-        Until I joined the team in 2019, the TAMUhack team handled this large
-        event's registration process manually:
-      </p>
-      <ol>
-        <li>
-          Thousands of applicants submitted applications using
-          <a href="https://typeform.com"> TypeForm </a>
-        </li>
-        <li>
-          Applications were manually reviewed by team members through Google
-          Sheets
-        </li>
-        <li>
-          Acceptance emails were written and distributed using
-          <a href="https://mailchimp.com">MailChimp</a>
-        </li>
-        <li>
-          Students who showed up on the day of the event were allowed entry if
-          they were on a list
-        </li>
-      </ol>
-      <p>
-        While this had worked for previous iterations of the event, the
-        projected headcount for the 2020 event was approximately 700 students,
-        not including sponsors and team members. In addition, the organizing
-        team was hoping to get statistics on how much food was consumed at each
-        meal during the event, and company workshop popularity metrics.
-      </p>
-    </section>
-    <section>
-      <h2>SOLUTION</h2>
-      <p>
-        I led the effort to design and develop
-        <a href="https://github.com/tamuhack-org/Ouroboros">Ouroboros</a>, an
-        easy-to-deploy registration system designed with organizers in mind.
-        Since its creation, Ouroboros has been used multiple times by different
-        hackathon groups and has processed over 4,000 applications.
-      </p>
-      <div class="screen-descriptors">
-        <div class="screen-descriptor">
-          <div class="screenshot">
-            <img
-              class="render"
-              src="../public/ouroboros/status.png"
-              alt="A screenshot of the TAMUhack 2020 status page. According to the status page, the user's application is incomplete, and should be submitted by December 5, 2020."
-            />
-          </div>
-          <div class="screen-description">
-            <span>Status View</span>
-            <ul>
-              <li>
-                Keeps applicants informed of their application status and
-                upcoming deadlines
-              </li>
-              <li>
-                Updates dynamically on deadlines without the need for manual
-                intervention
-              </li>
+        <div class="contributions">
+          <div class="contribution">
+            <span class="contribution-title">WHAT I DID</span>
+            <ul class="contribution-list">
+              <li>Software Architecture Design</li>
+              <li>Software Implementation</li>
+              <li>API Development</li>
+              <li>Deployment Automation</li>
+              <li>Documentation &amp; Handoff</li>
             </ul>
           </div>
-        </div>
-        <div class="screen-descriptor">
-          <div class="screenshot">
-            <img
-              class="render"
-              src="../public/ouroboros/application.png"
-              alt="A screenshot of the TAMUhack 2020 application form. Questions on the form include gender, prior hackathon experience, shirt size, and a request for a resume."
-            />
-          </div>
-          <div class="screen-description">
-            <span>Application View</span>
-            <ul>
-              <li>
-                Gathers required data from applicants, including name,
-                date-of-birth, and resume
-              </li>
-              <li>
-                Form validation notifies applicants of missing or improper data
-                entry
-              </li>
+          <div class="contribution">
+            <span class="contribution-title">TOOLS I USED</span>
+            <ul class="contribution-list">
+              <li>Python</li>
+              <li>Docker</li>
+              <li>PostgreSQL</li>
+              <li>Google Cloud Platform</li>
+              <li>HTML/CSS/JS</li>
             </ul>
           </div>
-        </div>
-        <div class="screen-descriptor">
-          <div class="screenshot">
-            <img
-              class="render"
-              src="../public/ouroboros/admin-panel.png"
-              alt="A screenshot of the Ouroboros admin panel, showing the various aspects of the system that are modifiable."
-            />
-          </div>
-          <div class="screen-description">
-            <span>Admin Panel</span>
-            <ul>
-              <li>Only accessible to allowlisted administrators</li>
-              <li>
-                Gives complete control over the system configuration and enables
-                data exporting
-              </li>
-              <li>
-                Keeps a record of actions performed by administrators to
-                maintain accountability
-              </li>
+          <div class="contribution">
+            <span class="contribution-title">MY TEAMMATES</span>
+            <ul class="contribution-list">
+              <li>Grace Fan</li>
             </ul>
           </div>
         </div>
       </div>
-    </section>
-    <section>
-      <h2>IMPLEMENTATION</h2>
-      <p>
-        I had 3 main priorities that were fundamental to the design and
-        implementation of the registration system: <em>extensibility</em>,
-        <em>maintainability</em>, and <em>reliability</em>.
-      </p>
-      <h3>Extensibility</h3>
-      <p>
-        TAMUhack is not unique in building a dedicated system to handle the
-        registration process. The same task has been attempted again and again
-        by various hackathon organizations across the country. However, the
-        primary difference between Ouroboros and other hackathon registration
-        systems is its initial and continued emphasis on configurability.
-        Anything that could be considered specific to our event was abstracted
-        into a variable or database table for others to modify.
-      </p>
-      <p>
-        Ouroboros is intended to be a general, minimal solution. The needs of
-        the TAMUhack organizing team in 2020 aren't the same as the needs of
-        other teams in the future. These events are constantly evolving, and it
-        was immediately evident that every aspect of the system needed to be
-        designed so that it could be built upon if someone else needed something
-        specific or didn't want to include something.
-      </p>
-      <p>
-        To enforce modularity and extensibility, I chose to use
-        <a href="https://python.org">Python</a> as its implementation language
-        and <a href="https://djangoproject.com">Django</a> for the web server.
-        Python is renowned for its approachable syntax and shallow learning
-        curve, making it an excellent choice for teams trying to get things
-        done. The Django web framework takes an opinionated approach towards
-        building software, forcing developers to comply with its constraints in
-        exchange for out-of-the-box functionality that could easily be extended
-        by other teams or future developers.
-      </p>
-      <figure>
-        <img
-          class="portrait"
-          src="../public/ouroboros/rattle-scan.png"
-          alt="A screenshot of the TAMUhack QR code scanning application, codenamed 'Rattle'. The screenshot has two dropdowns to configure rapid scanning."
-        />
-        <figcaption>
-          An example of Ouroboros' extensibility: our QR code scanning
-          application, used to record when applicants got food or attended
-          workshops.
-        </figcaption>
-      </figure>
-      <h3>Maintainability</h3>
-      <p>
-        Ouroboros was started in February 2019, roughly one year before I
-        graduated. I wanted development and improvement of the project to
-        continue after my departure from the university, so ensuring that it
-        could easily be handed off to others was critical. This meant including
-        documentation, using familiar technologies (another determining factor
-        for using Python), and teaching future tech team members how the
-        application worked when it was my time to leave.
-      </p>
-      <p>
-        Since my last commit on April 17, 2020, the TAMUhack team has added
-        1,430 lines of code and removed 49 (at time of writing). The team has
-        also configured the system to work for two more events since my
-        departure completely independently.
-      </p>
-      <h3>Reliability</h3>
-      <p>
-        The registration process for a hackathon is arguably the most important
-        process in the entire event. It gathers resumes to share with sponsors
-        (which has a direct implication on fundraising for future years),
-        facilitates day-of logistics, and represents the professionalism of the
-        organizing team to both applicants and corporate partners. Any software
-        that claims to handle such an important process effortlessly needs to be
-        rock-solid in terms of reliability.
-      </p>
-      <p>
-        To that end, every feature developed for Ouroboros was built using a
-        test-driven development mindset. Every feature that needed testing was
-        tested on every change. Code that failed tests was not allowed to be
-        deployed.
-      </p>
-      <p>
-        To make sure that our system was always available, I built an automated
-        continuous integration pipeline that deployed the system to Google Cloud
-        Platform every time a developer made a change. By automating the
-        process, I made sure that whatever changes we thought were ready for
-        launch were launched instantly.
-      </p>
-    </section>
+      <section>
+        <h2>BACKGROUND</h2>
+        <p>
+          <a href="https://tamuhack.com" target="_blank">TAMUhack</a> is a
+          student organization that hosts Texas' largest intercollegiate
+          hackathon at Texas A&amp;M University every year. For 24 hours, 500+
+          students from across the country gather at Texas A&amp;M to build
+          prototype applications, and get free food, company merchandise, and
+          potentially win big prizes.
+        </p>
+      </section>
+      <section>
+        <h2>PROBLEM</h2>
+        <p>
+          Until I joined the team in 2019, the TAMUhack team handled this large
+          event's registration process manually:
+        </p>
+        <ol>
+          <li>
+            Thousands of applicants submitted applications using
+            <a href="https://typeform.com" target="_blank"> TypeForm </a>
+          </li>
+          <li>
+            Applications were manually reviewed by team members through Google
+            Sheets
+          </li>
+          <li>
+            Acceptance emails were written and distributed using
+            <a href="https://mailchimp.com" target="_blank">MailChimp</a>
+          </li>
+          <li>
+            Students who showed up on the day of the event were allowed entry if
+            they were on a list
+          </li>
+        </ol>
+        <p>
+          While this had worked for previous iterations of the event, the
+          projected headcount for the 2020 event was approximately 700 students,
+          not including sponsors and team members. In addition, the organizing
+          team was hoping to get statistics on how much food was consumed at
+          each meal during the event, and company workshop popularity metrics.
+        </p>
+      </section>
+      <section>
+        <h2>SOLUTION</h2>
+        <p>
+          I led the effort to design and develop
+          <a href="https://github.com/tamuhack-org/Ouroboros" target="_blank"
+            >Ouroboros</a
+          >, an easy-to-deploy registration system designed with organizers in
+          mind. Since its creation, Ouroboros has been used multiple times by
+          different hackathon groups and has processed over 4,000 applications.
+        </p>
+        <div class="screen-descriptors">
+          <div class="screen-descriptor">
+            <div class="screenshot">
+              <img
+                class="render"
+                src="../public/ouroboros/status.png"
+                alt="A screenshot of the TAMUhack 2020 status page. According to the status page, the user's application is incomplete, and should be submitted by December 5, 2020."
+              />
+            </div>
+            <div class="screen-description">
+              <span>Status View</span>
+              <ul>
+                <li>
+                  Keeps applicants informed of their application status and
+                  upcoming deadlines
+                </li>
+                <li>
+                  Updates dynamically on deadlines without the need for manual
+                  intervention
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="screen-descriptor">
+            <div class="screenshot">
+              <img
+                class="render"
+                src="../public/ouroboros/application.png"
+                alt="A screenshot of the TAMUhack 2020 application form. Questions on the form include gender, prior hackathon experience, shirt size, and a request for a resume."
+              />
+            </div>
+            <div class="screen-description">
+              <span>Application View</span>
+              <ul>
+                <li>
+                  Gathers required data from applicants, including name,
+                  date-of-birth, and resume
+                </li>
+                <li>
+                  Form validation notifies applicants of missing or improper
+                  data entry
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="screen-descriptor">
+            <div class="screenshot">
+              <img
+                class="render"
+                src="../public/ouroboros/admin-panel.png"
+                alt="A screenshot of the Ouroboros admin panel, showing the various aspects of the system that are modifiable."
+              />
+            </div>
+            <div class="screen-description">
+              <span>Admin Panel</span>
+              <ul>
+                <li>Only accessible to allowlisted administrators</li>
+                <li>
+                  Gives complete control over the system configuration and
+                  enables data exporting
+                </li>
+                <li>
+                  Keeps a record of actions performed by administrators to
+                  maintain accountability
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>IMPLEMENTATION</h2>
+        <p>
+          I had 3 main priorities that were fundamental to the design and
+          implementation of the registration system: <em>extensibility</em>,
+          <em>maintainability</em>, and <em>reliability</em>.
+        </p>
+        <h3>Extensibility</h3>
+        <p>
+          TAMUhack is not unique in building a dedicated system to handle the
+          registration process. The same task has been attempted again and again
+          by various hackathon organizations across the country. However, the
+          primary difference between Ouroboros and other hackathon registration
+          systems is its initial and continued emphasis on configurability.
+          Anything that could be considered specific to our event was abstracted
+          into a variable or database table for others to modify.
+        </p>
+        <p>
+          Ouroboros is intended to be a general, minimal solution. The needs of
+          the TAMUhack organizing team in 2020 aren't the same as the needs of
+          other teams in the future. These events are constantly evolving, and
+          it was immediately evident that every aspect of the system needed to
+          be designed so that it could be built upon if someone else needed
+          something specific or didn't want to include something.
+        </p>
+        <p>
+          To enforce modularity and extensibility, I chose to use
+          <a href="https://python.org" target="_blank">Python</a> as its implementation language
+          and <a href="https://djangoproject.com" target="_blank">Django</a> for the web server.
+          Python is renowned for its approachable syntax and shallow learning
+          curve, making it an excellent choice for teams trying to get things
+          done. The Django web framework takes an opinionated approach towards
+          building software, forcing developers to comply with its constraints
+          in exchange for out-of-the-box functionality that could easily be
+          extended by other teams or future developers.
+        </p>
+        <figure>
+          <img
+            class="portrait"
+            src="../public/ouroboros/rattle-scan.png"
+            alt="A screenshot of the TAMUhack QR code scanning application, codenamed 'Rattle'. The screenshot has two dropdowns to configure rapid scanning."
+          />
+          <figcaption>
+            An example of Ouroboros' extensibility: our QR code scanning
+            application, used to record when applicants got food or attended
+            workshops.
+          </figcaption>
+        </figure>
+        <h3>Maintainability</h3>
+        <p>
+          Ouroboros was started in February 2019, roughly one year before I
+          graduated. I wanted development and improvement of the project to
+          continue after my departure from the university, so ensuring that it
+          could easily be handed off to others was critical. This meant
+          including documentation, using familiar technologies (another
+          determining factor for using Python), and teaching future tech team
+          members how the application worked when it was my time to leave.
+        </p>
+        <p>
+          Since my last commit on April 17, 2020, the TAMUhack team has added
+          1,430 lines of code and removed 49 (at time of writing). The team has
+          also configured the system to work for two more events since my
+          departure completely independently.
+        </p>
+        <h3>Reliability</h3>
+        <p>
+          The registration process for a hackathon is arguably the most
+          important process in the entire event. It gathers resumes to share
+          with sponsors (which has a direct implication on fundraising for
+          future years), facilitates day-of logistics, and represents the
+          professionalism of the organizing team to both applicants and
+          corporate partners. Any software that claims to handle such an
+          important process effortlessly needs to be rock-solid in terms of
+          reliability.
+        </p>
+        <p>
+          To that end, every feature developed for Ouroboros was built using a
+          test-driven development mindset. Every feature that needed testing was
+          tested on every change. Code that failed tests was not allowed to be
+          deployed.
+        </p>
+        <p>
+          To make sure that our system was always available, I built an
+          automated continuous integration pipeline that deployed the system to
+          Google Cloud Platform every time a developer made a change. By
+          automating the process, I made sure that whatever changes we thought
+          were ready for launch were launched instantly.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>© 2020 Gabriel Britain. Designed and built by me.</p>
+    </footer>
   </body>
 </html>

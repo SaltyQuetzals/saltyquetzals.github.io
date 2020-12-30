@@ -7,13 +7,13 @@ nav {
 
 #logo {
   flex: 7;
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: bold;
   color: #2f80ed;
 }
 
 nav .links {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   flex: 3;
   justify-self: flex-end;
   display: flex;
@@ -32,4 +32,10 @@ nav .active {
 nav a {
   text-decoration: none;
   color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+  #logo {
+    flex: 2;
+  }
 }

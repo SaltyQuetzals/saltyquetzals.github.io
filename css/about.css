@@ -3,7 +3,6 @@
 
 .about {
   max-width: 50%;
-  margin: 3%;
 }
 
 @media only screen and (max-width: 640px) {
@@ -11,4 +10,12 @@
     margin: auto;
     max-width: 75%;
   }
+}
+
+main p {
+  font-size: 1.5rem;
+}
+
+ul {
+  font-size: 1.5rem;
 }

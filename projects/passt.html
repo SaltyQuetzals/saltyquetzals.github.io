@@ -13,102 +13,119 @@
   </head>
   <body>
     <nav>
-      <a id="logo" href="../index.html">gb</a>
+      <a id="logo" href="./index.html">gb</a>
       <div class="links">
         <a class="active link" href="../projects.html">projects</a>
         <a class="link" href="../about.html">about</a>
-        <a class="link" href="../public/Gabriel_Britain_Resume.pdf">resume</a>
+        <a
+          class="link"
+          href="./public/Gabriel_Britain_Resume.pdf"
+          target="_blank"
+          >resume</a
+        >
       </div>
     </nav>
-    <div class="title-and-descriptor">
-      <h1 class="emphasized">Passt</h1>
-      <span class="project-descriptor"
-        >A real-time puzzle game built with friends.
-        <a href="https://isaset.com">Check it out!</a></span
-      >
-    </div>
-    <div class="featured-img-and-contributions">
-      <div class="featured-image">
-        <img src="../public/isaset.png" />
+    <main>
+      <div class="title-and-descriptor">
+        <h1 class="emphasized">Passt</h1>
+        <span class="project-descriptor"
+          >A real-time puzzle game built with friends.
+          <a href="https://isaset.com" target="_blank">Check it out!</a></span
+        >
       </div>
-      <div class="contributions">
-        <div class="contribution">
-          <span class="contribution-title">WHAT I DID</span>
-          <ul class="contribution-list">
-            <li>Server Implementation</li>
-            <li>Game Rule Implementation</li>
-            <li>Database Design</li>
-          </ul>
+      <div class="featured-img-and-contributions">
+        <div class="featured-image">
+          <img src="../public/isaset.png" />
         </div>
-        <div class="contribution">
-          <span class="contribution-title">TOOLS I USED</span>
-          <ul class="contribution-list">
-            <li>TypeScript</li>
-            <li>WebSockets</li>
-            <li>PostgreSQL</li>
-            <li>Heroku</li>
-          </ul>
-        </div>
-        <div class="contribution">
-          <span class="contribution-title">MY TEAMMATES</span>
-          <ul class="contribution-list">
-            <li>Florian Janke</li>
-          </ul>
+        <div class="contributions">
+          <div class="contribution">
+            <span class="contribution-title">WHAT I DID</span>
+            <ul class="contribution-list">
+              <li>Server Implementation</li>
+              <li>Game Rule Implementation</li>
+              <li>Database Design</li>
+            </ul>
+          </div>
+          <div class="contribution">
+            <span class="contribution-title">TOOLS I USED</span>
+            <ul class="contribution-list">
+              <li>TypeScript</li>
+              <li>WebSockets</li>
+              <li>PostgreSQL</li>
+              <li>Heroku</li>
+            </ul>
+          </div>
+          <div class="contribution">
+            <span class="contribution-title">MY TEAMMATES</span>
+            <ul class="contribution-list">
+              <li>Florian Janke</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <section>
-      <h2>BACKGROUND</h2>
-      <p>
-        This was just a for-fun personal project that a friend and I built in
-        our free time in Spring 2020. My friend had recently found the game
-        <a href="https://en.wikipedia.org/wiki/Set_(card_game)">Set</a>, which
-        is a real-time card game where people use pattern matching to identify
-        groups of related cards. My friend and I wanted to experiment with some
-        new web technologies, so we decided to build this game as a real-time
-        multiplayer game.
-      </p>
-    </section>
-    <section>
-      <h2>IMPLEMENTATION</h2>
-      <p>
-        While Florian was experimenting with
-        <a href="https://svelte.dev">Svelte</a> on the frontend, I wanted to
-        experiment with building a WebSocket server with solid type safety and
-        high test coverage. Since this was going to be a small-scale project and
-        didn't require an extreme amount of structure, I chose to go with
-        <a href="https://typescriptlang.org">TypeScript</a> for the backend,
-        powered by <a href="https://nodejs.org">Node.js</a>. I chose to use
-        <a href="https://socket.io">Socket.IO</a> to simplify the process of
-        handling WebSockets.
-      </p>
-      <h3>CHALLENGES</h3>
-      <h4>Socket Disconnections</h4>
-      <p>
-        One thing that became immediately important was handling random socket
-        disconnections that could emerge whn a person switched networks, or
-        minimized the browser window on their mobile device. If a person got
-        disconnected and reconnected, they lost all of their points and progress
-        and there was no way of getting them back. I didn't like the idea of
-        storing information in an in-memory data structure that I arbitrarily
-        designed, so we needed to actually store game data in a database so that
-        we could retrieve it on-demand.
-      </p>
-      <h4>Keeping it Free</h4>
-      <p>
-        Since neither Florian nor I wanted to spend money on this project beyond
-        a domain name, we had to figure out a way of hosting the frontend and
-        WebSocket server for free. For the static content, we chose to use
-        <a href="https://pages.github.com/">GitHub Pages</a>, which lets
-        developers host static content (like our frontend) for free. For the
-        server, we chose to use <a href="https://heroku.com">Heroku</a>, which
-        let us have a server for free, but will turn it off after 15 minutes of
-        inactivity until somebody tries to play the game again. It also let us
-        get a small database for free, as long as we kept it small. Since we
-        weren't anticipating this website blowing up, we decided we'd
-        periodically clear out empty games in the database using a script, and
-        that would keep us well within the free tier!
-      </p>
-    </section>
+      <section>
+        <h2>BACKGROUND</h2>
+        <p>
+          This was just a for-fun personal project that a friend and I built in
+          our free time in Spring 2020. My friend had recently found the game
+          <a
+            href="https://en.wikipedia.org/wiki/Set_(card_game)"
+            target="_blank"
+            >Set</a
+          >, which is a real-time card game where people use pattern matching to
+          identify groups of related cards. My friend and I wanted to experiment
+          with some new web technologies, so we decided to build this game as a
+          real-time multiplayer game.
+        </p>
+      </section>
+      <section>
+        <h2>IMPLEMENTATION</h2>
+        <p>
+          While Florian was experimenting with
+          <a href="https://svelte.dev" target="_blank">Svelte</a> on the
+          frontend, I wanted to experiment with building a WebSocket server with
+          solid type safety and high test coverage. Since this was going to be a
+          small-scale project and didn't require an extreme amount of structure,
+          I chose to go with
+          <a href="https://typescriptlang.org" target="_blank">TypeScript</a>
+          for the backend, powered by
+          <a href="https://nodejs.org" target="_blank">Node.js</a>. I chose to
+          use <a href="https://socket.io" target="_blank">Socket.IO</a> to
+          simplify the process of handling WebSockets.
+        </p>
+        <h3>CHALLENGES</h3>
+        <h4>Socket Disconnections</h4>
+        <p>
+          One thing that became immediately important was handling random socket
+          disconnections that could emerge whn a person switched networks, or
+          minimized the browser window on their mobile device. If a person got
+          disconnected and reconnected, they lost all of their points and
+          progress and there was no way of getting them back. I didn't like the
+          idea of storing information in an in-memory data structure that I
+          arbitrarily designed, so we needed to actually store game data in a
+          database so that we could retrieve it on-demand.
+        </p>
+        <h4>Keeping it Free</h4>
+        <p>
+          Since neither Florian nor I wanted to spend money on this project
+          beyond a domain name, we had to figure out a way of hosting the
+          frontend and WebSocket server for free. For the static content, we
+          chose to use
+          <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>,
+          which lets developers host static content (like our frontend) for
+          free. For the server, we chose to use
+          <a href="https://heroku.com" target="_blank">Heroku</a>, which let us
+          have a server for free, but will turn it off after 15 minutes of
+          inactivity until somebody tries to play the game again. It also let us
+          get a small database for free, as long as we kept it small. Since we
+          weren't anticipating this website blowing up, we decided we'd
+          periodically clear out empty games in the database using a script, and
+          that would keep us well within the free tier!
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>© 2020 Gabriel Britain. Designed and built by me.</p>
+    </footer>
   </body>
 </html>
