@@ -13,159 +13,180 @@
   </head>
   <body>
     <nav>
-      <a id="logo" href="../index.html">gb</a>
+      <a id="logo" href="./index.html">gb</a>
       <div class="links">
         <a class="active link" href="../projects.html">projects</a>
         <a class="link" href="../about.html">about</a>
-        <a class="link" href="../public/Gabriel_Britain_Resume.pdf">resume</a>
+        <a
+          class="link"
+          href="./public/Gabriel_Britain_Resume.pdf"
+          target="_blank"
+          >resume</a
+        >
       </div>
     </nav>
-    <div class="title-and-descriptor">
-      <h1 class="emphasized">ACM Publication: Design is (A)live</h1>
-      <span class="project-descriptor"
-        >How can software support iterative design education?</span
-      >
-    </div>
-    <div class="featured-img-and-contributions">
-      <div class="featured-image">
-        <img
-          src="../public/livemache.png"
-          alt="A snapshot of a student's work (taken with permission). The student has divided their work into sections for each milestone they needed to submit. Older sections are smaller, while more recent sections are more prominent. The student has drawn arrows to link older section ideas to newer section ideas."
-        />
-      </div>
-      <div class="contributions">
-        <div class="contribution">
-          <span class="contribution-title">WHAT I DID</span>
-          <ul class="contribution-list">
-            <li>Academic Research &amp; Paper Writing</li>
-            <li>Data Collection, Analysis, &amp; Synthesis</li>
-            <li>User Interviews</li>
-            <li>Full-Stack Web Development</li>
-          </ul>
-        </div>
-        <div class="contribution">
-          <span class="contribution-title">TOOLS I USED</span>
-          <ul class="contribution-list">
-            <li>Node.js</li>
-            <li>WebSockets</li>
-            <li>MongoDB</li>
-            <li>Google Colaboratory</li>
-          </ul>
-        </div>
-        <div class="contribution">
-          <span class="contribution-title">MY TEAMMATES</span>
-          <ul class="contribution-list">
-            <li>Ajit Jain</li>
-            <li>Nic Lupfer</li>
-            <li>Andruid Kerne</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <section>
-      <h2>BACKGROUND</h2>
-      <p>
-        Design education frequently consists of open-ended, creative coursework
-        that requires students to take risks, sometimes fail, and reflect on how
-        to improve. As design students progressively develop and evaluate their
-        solutions, their understanding of the problem improves, which improves
-        their future solutions.
-      </p>
-    </section>
-    <section>
-      <h2>PROBLEM</h2>
-      <p>
-        Oftentimes, design instructors lean on traditional digital submission
-        and assessment systems to evaluate their students' work. While great for
-        more close-ended work, these systems struggle to capture design
-        students' iterative refinement process, instead presenting only static
-        snapshots of a student's work before a submission deadline, making it
-        difficult for instructors to evaluate their students' process, which
-        they value more than the end solution.
-      </p>
-    </section>
-    <section>
-      <h2>APPROACH</h2>
-      <p>
-        I used an
-        <a href="https://livemache.ecologylab.net"
-          >existing collaborative design software named LiveMâché</a
+    <main>
+      <div class="title-and-descriptor">
+        <h1 class="emphasized">ACM Publication: Design is (A)live</h1>
+        <span class="project-descriptor"
+          >How can software support iterative design education?</span
         >
-        to study the iterative design habits of students, and determine how
-        instructors interacted with their students' work. I developed
-        functionality that allowed students to submit their work, instructors to
-        see how a student's work changed over time, and annotate a student's
-        work in real-time. I incorporated an email system to notify students and
-        instructors of successful submissions. My features were deployed to two
-        design courses (each around 15 students), one in South Korea at
-        <a href="https://www.kaist.ac.kr/en/html/kaist/01.html">KAIST</a>, and
-        another at <a href="https://tamu.edu">Texas A&amp;M University</a> in
-        College Station, Texas.
-      </p>
-      <figure>
-        <div class="figure-img-row">
-          <div class="figure-img">
-            <img
-              src="../public/design-is-alive/submission_new_submission.png"
-              alt="A picture of the submission dialog for submitting a new version of the student's work. The student has selected an assignment to submit to, and what they want their instructor to see. They have not filled out their name yet."
-            />
+      </div>
+      <div class="featured-img-and-contributions">
+        <div class="featured-image">
+          <img
+            src="../public/livemache.png"
+            alt="A snapshot of a student's work (taken with permission). The student has divided their work into sections for each milestone they needed to submit. Older sections are smaller, while more recent sections are more prominent. The student has drawn arrows to link older section ideas to newer section ideas."
+          />
+        </div>
+        <div class="contributions">
+          <div class="contribution">
+            <span class="contribution-title">WHAT I DID</span>
+            <ul class="contribution-list">
+              <li>Academic Research &amp; Paper Writing</li>
+              <li>Data Collection, Analysis, &amp; Synthesis</li>
+              <li>User Interviews</li>
+              <li>Full-Stack Web Development</li>
+            </ul>
           </div>
-          <div class="figure-img">
-            <img
-              src="../public/design-is-alive/submission_previous_versions.png"
-              alt="A picture of the submission dialog for viewing a previous version of the student's work. The student has selected an assignment that they've previously submitted to."
-            />
+          <div class="contribution">
+            <span class="contribution-title">TOOLS I USED</span>
+            <ul class="contribution-list">
+              <li>Node.js</li>
+              <li>WebSockets</li>
+              <li>MongoDB</li>
+              <li>Google Colaboratory</li>
+            </ul>
+          </div>
+          <div class="contribution">
+            <span class="contribution-title">MY TEAMMATES</span>
+            <ul class="contribution-list">
+              <li>Ajit Jain</li>
+              <li>Nic Lupfer</li>
+              <li>Andruid Kerne</li>
+            </ul>
           </div>
         </div>
-        <figcaption>
-          The dialog through which students could submit their work, and review
-          previous submissions.
-        </figcaption>
-      </figure>
-      <p>
-        Over the course of a semester, the system recorded how students and
-        instructors were interacting with student work for later analysis. After
-        the semester ended, I conducted semi-structured interviews with both
-        students and instructors to find out what they thought of the
-        functionality and whether or not they thought it helped them.
-      </p>
-    </section>
-    <section>
-      <h2>RESULTS</h2>
-      <p>
-        Instructors reported that the functionality I developed helped them feel
-        as though they were a part of the students' design process, and helped
-        them feel more engaged in each students' work. Students reported that my
-        features helped them reframe how they thought about their work,
-        transforming it into a living work that transforms over time.
-      </p>
-      <p>
-        That being said, both students and instructors felt that certain
-        features (like reviewing prevous submissions) could be improved to be on
-        par with existing digital submission and assesment systems.
-      </p>
-      <p>
-        In general, what we found is that integrating assessment into the
-        ideation process enhances students' and instructors' understandings of
-        design processes and progress. Future design systems should enable
-        instructors to leave feedback on designs and notify students, and let
-        students notify instructors when feedback has been resolved.
-      </p>
-    </section>
-    <section>
-      <h2>FUTURE WORK</h2>
-      <p>
-        This publication came from part of my undergraduate thesis, which is
-        currently under embargo. Once my thesis leaves embargo, I can discuss
-        the second semester's work, and will update this page with the remaining
-        information.
-      </p>
-      <p>
-        If you'd like to read the actual paper,
-        <a href="https://dl.acm.org/doi/abs/10.1145/3334480.3382947"
-          >check it out on ACM's Digital Library</a
-        >!
-      </p>
-    </section>
+      </div>
+      <section>
+        <h2>BACKGROUND</h2>
+        <p>
+          Design education frequently consists of open-ended, creative
+          coursework that requires students to take risks, sometimes fail, and
+          reflect on how to improve. As design students progressively develop
+          and evaluate their solutions, their understanding of the problem
+          improves, which improves their future solutions.
+        </p>
+      </section>
+      <section>
+        <h2>PROBLEM</h2>
+        <p>
+          Oftentimes, design instructors lean on traditional digital submission
+          and assessment systems to evaluate their students' work. While great
+          for more close-ended work, these systems struggle to capture design
+          students' iterative refinement process, instead presenting only static
+          snapshots of a student's work before a submission deadline, making it
+          difficult for instructors to evaluate their students' process, which
+          they value more than the end solution.
+        </p>
+      </section>
+      <section>
+        <h2>APPROACH</h2>
+        <p>
+          I used an
+          <a href="https://livemache.ecologylab.net" target="_blank"
+            >existing collaborative design software named LiveMâché</a
+          >
+          to study the iterative design habits of students, and determine how
+          instructors interacted with their students' work. I developed
+          functionality that allowed students to submit their work, instructors
+          to see how a student's work changed over time, and annotate a
+          student's work in real-time. I incorporated an email system to notify
+          students and instructors of successful submissions. My features were
+          deployed to two design courses (each around 15 students), one in South
+          Korea at
+          <a
+            href="https://www.kaist.ac.kr/en/html/kaist/01.html"
+            target="_blank"
+            >KAIST</a
+          >, and another at
+          <a href="https://tamu.edu" target="_blank"
+            >Texas A&amp;M University</a
+          >
+          in College Station, Texas.
+        </p>
+        <figure>
+          <div class="figure-img-row">
+            <div class="figure-img">
+              <img
+                src="../public/design-is-alive/submission_new_submission.png"
+                alt="A picture of the submission dialog for submitting a new version of the student's work. The student has selected an assignment to submit to, and what they want their instructor to see. They have not filled out their name yet."
+              />
+            </div>
+            <div class="figure-img">
+              <img
+                src="../public/design-is-alive/submission_previous_versions.png"
+                alt="A picture of the submission dialog for viewing a previous version of the student's work. The student has selected an assignment that they've previously submitted to."
+              />
+            </div>
+          </div>
+          <figcaption>
+            The dialog through which students could submit their work, and
+            review previous submissions.
+          </figcaption>
+        </figure>
+        <p>
+          Over the course of a semester, the system recorded how students and
+          instructors were interacting with student work for later analysis.
+          After the semester ended, I conducted semi-structured interviews with
+          both students and instructors to find out what they thought of the
+          functionality and whether or not they thought it helped them.
+        </p>
+      </section>
+      <section>
+        <h2>RESULTS</h2>
+        <p>
+          Instructors reported that the functionality I developed helped them
+          feel as though they were a part of the students' design process, and
+          helped them feel more engaged in each students' work. Students
+          reported that my features helped them reframe how they thought about
+          their work, transforming it into a living work that transforms over
+          time.
+        </p>
+        <p>
+          That being said, both students and instructors felt that certain
+          features (like reviewing prevous submissions) could be improved to be
+          on par with existing digital submission and assesment systems.
+        </p>
+        <p>
+          In general, what we found is that integrating assessment into the
+          ideation process enhances students' and instructors' understandings of
+          design processes and progress. Future design systems should enable
+          instructors to leave feedback on designs and notify students, and let
+          students notify instructors when feedback has been resolved.
+        </p>
+      </section>
+      <section>
+        <h2>FUTURE WORK</h2>
+        <p>
+          This publication came from part of my undergraduate thesis, which is
+          currently under embargo. Once my thesis leaves embargo, I can discuss
+          the second semester's work, and will update this page with the
+          remaining information.
+        </p>
+        <p>
+          If you'd like to read the actual paper,
+          <a
+            href="https://dl.acm.org/doi/abs/10.1145/3334480.3382947"
+            target="_blank"
+            >check it out on ACM's Digital Library</a
+          >!
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2020 Gabriel Britain. Designed and built by me.</p>
+    </footer>
   </body>
 </html>
