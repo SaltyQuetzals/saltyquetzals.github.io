@@ -57,6 +57,10 @@
   }
 }
 
+.project .project-preview {
+  background-size: cover;
+}
+
 .project .project-preview#grove {
   background-image: url('../public/grove.png');
   background-color: transparent;
@@ -67,25 +71,20 @@
 
 .project .project-preview#ouroboros {
   background-image: url('../public/ouroboros.png');
-  background-size: cover;
 }
 
 .project .project-preview#isaset {
   background-image: url('../public/isaset.png');
-  background-size: cover;
 }
 
 .project .project-preview#ssbmml {
   background-image: url('../public/ssbmml.jpg');
-  background-size: cover;
 }
 
 .project .project-preview#muc-cog {
   background-image: url('../public/muc.jpg');
-  background-size: cover;
 }
 
 .project .project-preview#livemache {
   background-image: url('../public/livemache.png');
-  background-size: cover;
 }
