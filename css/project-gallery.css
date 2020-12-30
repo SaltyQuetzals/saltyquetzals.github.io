@@ -61,30 +61,22 @@
   background-size: cover;
 }
 
-.project .project-preview#grove {
-  background-image: url('../public/grove.png');
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
 .project .project-preview#ouroboros {
-  background-image: url('../public/ouroboros.png');
+  background-image: url('../public/ouroboros.webp');
 }
 
 .project .project-preview#isaset {
-  background-image: url('../public/isaset.png');
+  background-image: url('../public/isaset.webp');
 }
 
 .project .project-preview#ssbmml {
-  background-image: url('../public/ssbmml.jpg');
+  background-image: url('../public/ssbmml.webp');
 }
 
 .project .project-preview#muc-cog {
-  background-image: url('../public/muc.jpg');
+  background-image: url('../public/muc.webp');
 }
 
 .project .project-preview#livemache {
-  background-image: url('../public/livemache.png');
+  background-image: url('../public/livemache.webp');
 }
