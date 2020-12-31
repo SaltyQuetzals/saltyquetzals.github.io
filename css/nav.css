@@ -38,4 +38,9 @@ nav a {
   #logo {
     flex: 2;
   }
+
+  nav .links {
+    font-size: 1.25rem;
+    flex: 5;
+  }
 }
