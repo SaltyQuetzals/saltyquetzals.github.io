@@ -222,8 +222,3 @@ video {
 .screen-descriptors-grid span {
   font-size: 1.25rem;
 }
-
-.thumbnail-grid > .screen-descriptor {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
