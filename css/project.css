@@ -106,7 +106,7 @@ figure {
 }
 
 figure > img {
-  min-width: 100%;
+  min-width: 50%;
   margin: auto;
   max-width: 100%;
 }

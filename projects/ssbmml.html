@@ -176,12 +176,30 @@
             characters look like, it makes some pretty bad guesses. But it can
             draw bad rectangles really fast, which is better than nothing!
           </li>
-          <li>I go through the program’s bad rectangles, and fix them up.</li>
           <li>
-            I combine the fixed rectangles with my original rectangles, and now
-            I have a lot more good rectangles!
+            I go through the program’s bad rectangles, and refine them to an
+            acceptable level.
+          </li>
+          <li>
+            I combine the new rectangles with the rectangles created thus far,
+            and repeat.
           </li>
         </ol>
+        <p>
+          As time goes on, my program gets better at drawing rectangles, which
+          means I have to draw fewer rectangles by hand. The process looks a lot
+          like this:
+        </p>
+        <figure>
+          <img
+            src="../public/ssbmml/process_diagram.webp"
+            alt="A visual representation of the bootstrapping process for the frame dataset."
+          />
+          <figcaption>
+            The bootstrapping process I used to create a significant number of
+            labels with minimal effort.
+          </figcaption>
+        </figure>
         <p>
           Now I just rinse and repeat, over and over, until I have enough
           rectangles!
