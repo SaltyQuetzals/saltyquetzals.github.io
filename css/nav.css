@@ -25,6 +25,10 @@ nav .link {
   flex: 1;
 }
 
+nav .link:hover {
+  font-weight: bolder;
+}
+
 nav .active {
   font-weight: bolder;
 }
