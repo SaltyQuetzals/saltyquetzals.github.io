@@ -12,12 +12,10 @@
   height: 100%;
 }
 
-.project-preview {
-  background: #828282;
-  padding-top: calc(591.44 / 1127.34 * 100%); /** 16:9 aspect ratio */
+.project-preview img {
+  object-fit: cover;
   width: 100%;
-  height: 0;
-  overflow: hidden;
+  height: 100%;
 }
 
 .project-description {
@@ -57,26 +55,23 @@
   }
 }
 
-.project .project-preview {
-  background-size: cover;
+.project-preview {
+  position: relative;
 }
 
-.project .project-preview#ouroboros {
-  background-image: url('../public/ouroboros.webp');
+.project-preview::after {
+  display: block;
+  content: "";
+  /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
 }
 
-.project .project-preview#isaset {
-  background-image: url('../public/isaset.webp');
-}
-
-.project .project-preview#ssbmml {
-  background-image: url('../public/ssbmml.webp');
-}
-
-.project .project-preview#muc-cog {
-  background-image: url('../public/muc.webp');
-}
-
-.project .project-preview#livemache {
-  background-image: url('../public/livemache.webp');
+/* Image is positioned absolutely relative to the parent element */
+.project-preview img {
+  /* Image should match parent box size */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
