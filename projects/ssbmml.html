@@ -75,9 +75,9 @@
           <a
             href="https://adamspannbauer.github.io/2017/12/28/super-smash-cv/"
             target="_blank"
-            >Adam Spannbauer’s ssbm_fox_detector</a
+            >Adam Spannbauer's ssbm_fox_detector</a
           >, which uses machine learning to track a specific video game
-          character on a tournament recording. I felt like the project’s focus
+          character on a tournament recording. I felt like the project's focus
           was narrow, and wanted to expand it to include all of the characters
           in the video game, not just one!
         </p>
@@ -95,7 +95,7 @@
           </li>
           <li>
             Draw rectangles around each character visible on the screen on each
-            video, and label each rectangle with the character’s name
+            video, and label each rectangle with the character's name
           </li>
           <li>
             Feed all of my data into a program, and teach the program what each
@@ -135,8 +135,8 @@
         </ul>
         <p>
           I needed to go through every match on the site, find the corresponding
-          video, and download it onto my desktop computer. It’d take too long to
-          do that by hand (there’s tournament matches dating back to 2004), so I
+          video, and download it onto my desktop computer. It'd take too long to
+          do that by hand (there's tournament matches dating back to 2004), so I
           wrote a simple script that did that for me! All the program did was
           pretend to be a regular person using their computer:
         </p>
@@ -165,7 +165,7 @@
         <p>
           Luckily, I had some awesome friends who told me about a process that
           would help me speed up my rectangle-drawing. The process is called
-          bootstrapping, and to simplify it as much as possible, here’s how it
+          bootstrapping, and to simplify it as much as possible, here's how it
           works:
         </p>
         <ol>
@@ -177,14 +177,14 @@
             to draw perfect rectangles.
           </li>
           <li>
-            I pretend like the program knows what it’s talking about, and give
-            it some pictures it hasn’t seen before, and ask it to draw
-            rectangles for me. Since the program doesn’t know what the
+            I pretend like the program knows what it's talking about, and give
+            it some pictures it hasn't seen before, and ask it to draw
+            rectangles for me. Since the program doesn't know what the
             characters look like, it makes some pretty bad guesses. But it can
             draw bad rectangles really fast, which is better than nothing!
           </li>
           <li>
-            I go through the program’s bad rectangles, and refine them to an
+            I go through the program's bad rectangles, and refine them to an
             acceptable level.
           </li>
           <li>
@@ -213,7 +213,7 @@
         </p>
         <h3>PART III: THE EASY PART</h3>
         <p>
-          I’m not a machine learning master, by any means. Rather than spend a
+          I'm not a machine learning master, by any means. Rather than spend a
           ton of time learning about machine learning and get really in-depth
           about the subject, I tried to keep my knowledge shallow enough to move
           fast. So I went online,
