@@ -1,3 +1,1 @@
-<footer>
-	<p class="text-center pb-3">© 2020 Gabriel Britain. Designed and built by Gabriel Britain.</p>
-</footer>
+<footer class="border-t-2 p-8 font-bold">Created by Gabriel Britain</footer>
