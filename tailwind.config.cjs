@@ -6,10 +6,12 @@ module.exports = {
 			blue: '#699CF8',
 			white: '#FFFFFF',
 			yellow: '#FEC600',
-			green: '#419D78'
+			green: '#419D78',
+			navy: '#133C55'
 		},
 		fontFamily: {
-			sans: ['Roboto', 'sans-serif']
+			sans: ['Fira Sans', 'sans-serif'],
+			serif: ['Lora', 'serif']
 		},
 		boxShadow: {
 			solid: '8px 8px 0px #000000'

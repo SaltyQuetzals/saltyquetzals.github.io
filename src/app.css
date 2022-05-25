@@ -6,3 +6,43 @@ h1 {
 	@apply text-black;
 	@apply text-5xl;
 }
+
+h2 {
+	@apply text-black;
+	@apply text-4xl;
+	@apply font-bold;
+	@apply uppercase;
+	@apply tracking-widest;
+}
+
+h3 {
+	@apply text-black;
+	@apply text-3xl;
+	@apply font-bold;
+}
+
+p {
+	@apply font-serif;
+}
+
+figure {
+	@apply p-4;
+}
+
+figcaption {
+	@apply italic;
+	@apply font-serif;
+	@apply text-center;
+}
+
+p a {
+	@apply font-serif;
+	@apply underline;
+	@apply font-bold;
+}
+
+figcaption a {
+	@apply font-serif;
+	@apply underline;
+	@apply font-bold;
+}
